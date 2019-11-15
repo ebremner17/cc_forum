@@ -1,1 +1,16 @@
 <?php
+
+/**
+ * Implements hook_form_alter()
+ *
+ * Remove subject from comment forum.
+ */
+function cc_forum_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  // If we are on a comment forum, remove the subject.
+  if ($form_id == 'comment_comment_forum_form') {
+
+    // Remove the subject.
+    unset($form['subject']);
+  }
+}
