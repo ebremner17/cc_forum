@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: cc_pa_forum_topic
+label: 'Forum topic'
+type: 'canonical_entities:node'
+pattern: 'forum/[current-date:html_date]/[node:title]'
+selection_criteria:
+  8bf16970-9a40-48f9-8774-7d7995a5003d:
+    id: node_type
+    bundles:
+      forum: forum
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8bf16970-9a40-48f9-8774-7d7995a5003d
+selection_logic: and
+weight: 0
+relationships: {  }

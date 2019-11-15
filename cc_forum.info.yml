@@ -1,0 +1,7 @@
+name: Forum
+description: 'Forums for Cadets Canada'
+type: module
+core: 8.x
+dependencies:
+  - node
+  - pathauto
