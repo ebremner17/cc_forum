@@ -3,5 +3,6 @@ description: 'Forums for Cadets Canada'
 type: module
 core: 8.x
 dependencies:
+  - forum
   - node
   - pathauto
